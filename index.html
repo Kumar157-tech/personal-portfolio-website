@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal portfolio</title>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(170, 187, 228);
+      font-size: 1.1rem;
+    }
+
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 140px 0;
+    }
+
+    .firstsection>div {
+      width: 30%;
+    }
+
+    .leftsection {
+      font-size: 3rem;
+    }
+
+    .leftsection .buttons {
+      padding: 50px 0;
+    }
+
+    .leftsection .btn {
+      padding: 12px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .rightsection img {
+      width: 100%;
+    }
+
+    .purple {
+      color: rgb(170, 187, 228);
+    }
+
+    .text-gray {
+      color: gray;
+    }
+
+    #element {
+      color: rgb(170, 187, 228);
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      padding-bottom: 40px;
+    }
+
+    .secondsection h3 {
+      font-size: 1.9rem;
+      margin-top: 40px;
+    }
+
+    .profile-heading {
+      margin-top: 100px;
+    }
+
+    .secondsection p {
+      margin: 15px 0;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .box {
+      background: white;
+      width: 77vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+      position: relative;
+    }
+
+    .experience-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 120px;
+    }
+
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 5px;
+      width: 150px;
+      text-align: center;
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 10px;
+      color: gray;
+      width: 150px;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .section-content {
+      padding: 0 30px;
+    }
+
+    footer {
+      background-color: #0e0e1a;
+    }
+
+    .footer {
+      display: flex;
+      margin: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer>div {
+      width: 223px;
+    }
+
+    footer .footer-rights {
+      text-align: center;
+      color: grey;
+      padding: 12px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">My Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Kumar Ayush</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn"> Download Resume</button>
+          <button class="btn"> Visit Github</button>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="web.png" alt="Web development illustration" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="secondsection">
+      <span class="text-gray">What I have done so far</span>
+      <h3>Skills</h3>
+
+      <div class="box">
+        <div class="experience-item">
+          <div class="vertical">
+            <img class="image-top" src="devel.png" alt="Developer icon" />
+          </div>
+          <div class="vertical-title">Front-End Developer</div>
+          <div class="vertical-desc">
+            I am a front-end developer passionate about crafting responsive, user-friendly websites and web
+            applications. I specialize in HTML, CSS, JavaScript, and frameworks like React.
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="vertical">
+            <img class="image-top" src="devel.png" alt="Developer icon" />
+          </div>
+          <div class="vertical-title">Back-End Developer</div>
+          <div class="vertical-desc">
+            I am a back-end developer skilled in building robust server-side applications. I work with databases, APIs,
+            and server logic using languages like Python, Node.js, or Java to ensure secure, efficient, and scalable
+            systems.
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="vertical">
+            <img class="image-top" src="devel.png" alt="Developer icon" />
+          </div>
+          <div class="vertical-title">Full Stack Developer</div>
+          <div class="vertical-desc">
+            Combining both front-end and back-end expertise, I build complete web applications from scratch to
+            deployment with clean, maintainable code.
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+      <hr>
+
+      <h3 class="profile-heading">Profile</h3>
+      <div class="section-content">
+        <p>I am a dedicated and detail-oriented software developer with a strong passion for building efficient,
+          user-focused solutions. I aim to create seamless user experiences while maintaining scalable backend systems.
+        </p>
+      </div>
+
+      <hr>
+
+      <h3>Education</h3>
+      <div class="section-content">
+        <p><strong>Bachelor of Technology in Computer Science(Artificial Intelligence)</strong><br />
+          Noida Institute of Engineering and Technology,2023 - 2027</p>
+        <p><strong>10th Grade - CBSE</strong><br />
+          Indus Valley Public School,2021</p>
+        <p><strong>12th Grade - CBSE</strong><br />
+          Indus Valley Public School,2023</p>
+      </div>
+
+      <hr />
+
+      <h3>Internship</h3>
+      <div class="section-content">
+        <p><strong>Python Programming Intern</strong> - Codsoft (July 2024 - Aug 2024)<br />
+          completed a 4 week internship in python programming and gained practical experience through hands-on tasks .
+        </p>
+      </div>
+
+      <hr />
+
+      <h3>Projects</h3>
+      <div class="section-content">
+        <p><strong>Portfolio Website</strong> – Personal portfolio built using HTML, CSS, and JavaScript.</p>
+        <p><strong>E-commerce Backend</strong> – Node.js and MongoDB-based REST API for product management and user
+          authentication.</p>
+        <p><strong>Legally-chatbot</strong> –using node.js and MongoDB-based.</p>
+      </div>
+
+      <hr />
+
+      <h3>Interests</h3><br>
+      <div class="section-content">
+        <ul>
+          <li>watching movies</li><br>
+          <li>playing online games</li><br>
+          <li>reading novels</li><br>
+          <li>listening to music</li><br>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h3>Declaration</h3>
+      <div class="section-content">
+        <p>I hereby declare that all the information provided above is true and correct to the best of my knowledge and
+          belief.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3> My Personal Portfolio</h3>
+      </div>
+
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Service</li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Service</li>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Service</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div style="text-align: center; padding: 10px;">
+      <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://github.com" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-x-twitter fa-2x"></i>
+      </a>
+    </div>
+
+    <div class="footer-rights">
+      copyright &#169; kumarayushportfolio.com | All rights reserved
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Full Stack Developer', 'Video Editor'],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
